@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header|Styles</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       .Container,ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:1em;
+        list-style:none;
+        padding-top: 1em;
+        border: none;
+        margin-left: 15em;
+        padding-bottom:1em;
+       }
+       li:hover{
+        color:rgb(63, 63, 63);
+        cursor:pointer;
+       }
+       .login,.sign{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         gap:5em;
+         border: solid 1px #0D6EFD;
+         text-align: left;
+         padding:0.5em;
+         border-radius:0.2em;
+         color:#0D6EFD ;
+       }
+       .login{
+        margin-left: 20em;
+       }
+       .login:hover{
+        color: white;
+        background-color:#0D6EFD ;
+       }
+       .sign{
+        color: white;
+        background-color: #0D6EFD;
+       }
+       .sign:hover{
+        color:white;
+        background-color:#0c54c1;
+       }
+       .loginc,a{
+        color:#0D6EFD;
+       }
+       .signc,a{
+        color: white;
+        text-decoration: none;
+       }
+       .loginc:hover{
+            color: white;
+       }
+       a::highlight{
+        color:#0c54c1;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>FAQs</li>
+            <li>About</li>
+            <li class="login"><a href="" class="loginc">Login</a></li>
+            <li class="sign"><a href="" class="signc">Sign-Up</a></li>
+        </ul>
+    </div>
+    <hr>
+    
+</body>
+</html>
